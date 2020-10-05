@@ -5,8 +5,7 @@ def prime?(n)
         return false
     end
     until i > (n-1)
-        state = n % (i - 1) == 0
-        if state == true
+        if (n % (i - 1) == 0) == true
             return false
         end
         i += 1
